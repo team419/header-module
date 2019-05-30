@@ -7,13 +7,19 @@ body {
   color: #333;
 }
 
+.page-header{
+  background: #d32323
+  url(https://s3-media4.fl.yelpcdn.com/assets/srv0/yelp_styleguide/c146b0884f6a/assets/img/structural/header_stars.png)
+  no-repeat center;
+}
+
 .main-header {
   padding: 12px 0;
   position: relative;
-  background: #d32323
-    url(https://s3-media4.fl.yelpcdn.com/assets/srv0/yelp_styleguide/c146b0884f6a/assets/img/structural/header_stars.png)
-    no-repeat center;
+  
   display: flex;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .main-header_logo a {
@@ -29,4 +35,101 @@ body {
   height: 40px;
   background-repeat: no-repeat;
   background-image: url(https://s3-media3.fl.yelpcdn.com/assets/srv0/yelp_design_web/b085a608c15f/assets/img/logos_desktop/default@2x.png);
+}
+
+.arrange_unit {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table-cell;
+  vertical-align: top;
+  background-color: #fff;
+}
+
+.main-search_pseudo-input {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 0;
+  background: #fff;
+  margin: 0;
+  height: 36px;
+  line-height: 20px;
+}
+
+.pseudo-input_text_find{
+  border-radius: 4px 0 0 4px;
+  position: relative;
+}
+
+.main-search_submit, .yform .main-search_submit {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  background: #bd1f1f;
+  line-height: 36px;
+  padding: 0 15px;
+  width: 54px;
+}
+
+.pseudo-input input, .yform .pseudo-input input:focus, .yform .pseudo-input.focused input {
+  margin: 0;
+  border: 0;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: none;
+  padding: 2px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.svg-24{
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.user-account_avatar img {
+  width: 20px;
+  height: 20px;
+}
+
+.main-header .main-header_account .user-account_button, .main-header .main-header_nav-dropdown .user-account_button {
+  padding: 0;
+}
+
+.main-header .main-header_button, .main-header .main-header_account .user-account_button, .main-header .main-header_nav-dropdown .user-account_button {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  vertical-align: middle;
+  margin: 0;
+  outline: 0;
+  border: none;
+  border-radius: 4px;
+  background: #bd1f1f;
+  line-height: 24px;
+  padding: 6px 18px;
+}
+
+.main-header_account .user-account_button, .main-header_nav-dropdown .user-account_button {
+  width: 58px;
+}
+
+.dropdown-container{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+}
+
+.dropdown-item{
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: 500!important;
+  border: #e6e6e6 1px solid;
+  padding: 8px 12px;
+  vertical-align: middle;
 }
