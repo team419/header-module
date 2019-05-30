@@ -74,8 +74,8 @@ class App extends React.Component {
                   <path d="M17.22 22a1.78 1.78 0 0 1-1.74-2.167l1.298-4.98L14 13l1.756-9.657A1.635 1.635 0 0 1 19 3.635V20.22A1.78 1.78 0 0 1 17.22 22zm-7.138-9.156l.697 7.168a1.79 1.79 0 1 1-3.56 0l.7-7.178A3.985 3.985 0 0 1 5 9V3a1 1 0 0 1 2 0v5.5c0 .28.22.5.5.5s.5-.22.5-.5V3a1 1 0 0 1 2 0v5.5c0 .28.22.5.5.5s.5-.22.5-.5V3a1 1 0 0 1 2 0v5.83c0 1.85-1.2 3.518-2.918 4.014z"></path>
                 </svg>
               </span>
-              Restaurants
-            <span className="nav-triangle-stroke">
+              <span className="dropdown-title">Restaurants</div>
+              <span className="nav-triangle-stroke">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="icon_svg">
                   <path d="M18.364 9.525L16.95 8.11 12 13.06 7.05 8.11 5.636 9.526 12 15.89l6.364-6.365z"></path>
                 </svg>
@@ -88,7 +88,7 @@ class App extends React.Component {
                   </path>
                 </svg>
               </span>
-              Home Services
+              <span className="dropdown-title">Home Services</span>
             <span className="nav-triangle-stroke">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="icon_svg">
                   <path d="M18.364 9.525L16.95 8.11 12 13.06 7.05 8.11 5.636 9.526 12 15.89l6.364-6.365z">
@@ -101,7 +101,7 @@ class App extends React.Component {
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="icon_svg">
                   <path d="M22 10.22V9.5a.5.5 0 0 0-.5-.5H19l-1.176-3.528C17.53 4.586 16.784 4 15.954 4h-7.91c-.83 0-1.573.586-1.868 1.472L5 9H2.5a.5.5 0 0 0-.5.5v.72a1 1 0 0 0 .757.97l.743.185-.3.225A3.002 3.002 0 0 0 2 14v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-1h12v1a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-5c0-.944-.445-1.833-1.2-2.4l-.3-.225.743-.186a1 1 0 0 0 .757-.97zM8.045 6h7.91l1.143 4H6.902l1.143-4zm-.958 9H5.182a1.182 1.182 0 0 1 0-2.363c.48 0 1.492.82 2.242 1.493a.5.5 0 0 1-.337.87zm11.73 0h-1.904a.5.5 0 0 1-.337-.87c.75-.674 1.76-1.493 2.242-1.493a1.182 1.182 0 0 1 0 2.363z"></path></svg>
               </span>
-              Auto Services
+              <span className="dropdown-title">Auto Services</span>
             <span className="nav-triangle-stroke">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="icon_svg">
                   <path d="M18.364 9.525L16.95 8.11 12 13.06 7.05 8.11 5.636 9.526 12 15.89l6.364-6.365z"></path>
