@@ -7,19 +7,19 @@ body {
   color: #333;
 }
 
-.page-header{
+.page-header {
   background: #d32323
-  url(https://s3-media4.fl.yelpcdn.com/assets/srv0/yelp_styleguide/c146b0884f6a/assets/img/structural/header_stars.png)
-  no-repeat center;
+    url(https://s3-media4.fl.yelpcdn.com/assets/srv0/yelp_styleguide/c146b0884f6a/assets/img/structural/header_stars.png)
+    no-repeat center;
 }
 
 .main-header {
   padding: 12px 0;
   position: relative;
-  
+
   display: flex;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 .main-header_logo a {
@@ -58,12 +58,13 @@ body {
   line-height: 20px;
 }
 
-.pseudo-input_text_find{
+.pseudo-input_text_find {
   border-radius: 4px 0 0 4px;
   position: relative;
 }
 
-.main-search_submit, .yform .main-search_submit {
+.main-search_submit,
+.yform .main-search_submit {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: 0;
@@ -74,7 +75,9 @@ body {
   width: 54px;
 }
 
-.pseudo-input input, .yform .pseudo-input input:focus, .yform .pseudo-input.focused input {
+.pseudo-input input,
+.yform .pseudo-input input:focus,
+.yform .pseudo-input.focused input {
   margin: 0;
   border: 0;
   outline: 0;
@@ -86,7 +89,7 @@ body {
   vertical-align: middle;
 }
 
-.svg-24{
+.svg-24 {
   width: 24px;
   height: 24px;
   fill: white;
@@ -97,11 +100,14 @@ body {
   height: 20px;
 }
 
-.main-header .main-header_account .user-account_button, .main-header .main-header_nav-dropdown .user-account_button {
+.main-header .main-header_account .user-account_button,
+.main-header .main-header_nav-dropdown .user-account_button {
   padding: 0;
 }
 
-.main-header .main-header_button, .main-header .main-header_account .user-account_button, .main-header .main-header_nav-dropdown .user-account_button {
+.main-header .main-header_button,
+.main-header .main-header_account .user-account_button,
+.main-header .main-header_nav-dropdown .user-account_button {
   -webkit-box-shadow: none;
   box-shadow: none;
   vertical-align: middle;
@@ -114,22 +120,29 @@ body {
   padding: 6px 18px;
 }
 
-.main-header_account .user-account_button, .main-header_nav-dropdown .user-account_button {
+.main-header_account .user-account_button,
+.main-header_nav-dropdown .user-account_button {
   width: 58px;
 }
 
-.dropdown-container{
+.dropdown-container {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   display: flex;
 }
 
-.dropdown-item{
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+.dropdown-item {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.28571em;
-  font-weight: 500!important;
+  font-weight: 500 !important;
   border: #e6e6e6 1px solid;
   padding: 8px 12px;
+  vertical-align: middle;
+  width: 14.25%;
+  height: 30px;
+}
+
+.icon_svg{
   vertical-align: middle;
 }
