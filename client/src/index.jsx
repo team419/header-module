@@ -15,15 +15,24 @@ class App extends React.Component {
   render() {
     return (
       <section>
+        <div className="header-top-addons">
+          <span className="svg-holder">
+            <svg className="svg-nav-18" height="100%" viewBox="0 0 18 18" width="100%">
+              <path d="M14 15V6h2v9h-2zM5 6h1V2h6v4h1v9H5V6zm2 0h4V3H7v3zM2 6h2v9H2V6z"></path>
+            </svg>
+          </span>
+          <a className="biz-a" href="https://biz.yelp.com/" target="_blank">Go to Yelp for Business Owners</a>
+        </div>
+
         <div className="page-header">
           <div className="main-header main-content-wrap js-main-header webview-hidden">
             <div className="main-header_logo nav-item" id="logo" data-analytics-label="logo">
               <a href="/">Yelp</a>
             </div>
 
-            <div className="nav-item">
+            <div className="nav-item form-unit">
               <div className="arrange_unit">
-                <label className="main-search_pseudo-input pseudo-input" for="find_desc">
+                <label className="main-search_pseudo-input pseudo-input find-input" for="find_desc">
                   <span className="pseudo-input_text pseudo-input_text_find">Find</span>
                   <span className="pseudo-input_field-holder" data-component-bound="true" >
                     <input maxlength="64" data-component-bound="true" name="find_desc" value="" />
@@ -36,24 +45,24 @@ class App extends React.Component {
                     <input name="ns" placeholder="San Francisco, CA" />
                   </span>
                 </label>
+
+                <button className="ybtn ybtn--primary main-search_submit main-header_button" id="header-search-submit" title="Search" type="submit" value="submit">
+                <svg className="svg-nav-24" height="100%" viewBox="0 0 24 24" width="100%"><path d="M20.753 19.34l-4.295-4.297A7.46 7.46 0 0 0 18 10.5a7.5 7.5 0 1 0-7.5 7.5 7.46 7.46 0 0 0 4.543-1.542l4.296 4.295a1 1 0 1 0 1.412-1.414zM10.5 16A5.506 5.506 0 0 1 5 10.5C5 7.467 7.467 5 10.5 5S16 7.467 16 10.5 13.533 16 10.5 16z"></path></svg>
+              </button>
               </div>
             </div>
 
-            <div className="nav-item">
-              <button className="ybtn ybtn--primary main-search_submit main-header_button" id="header-search-submit" title="Search" type="submit" value="submit">
-                <svg className="svg-24" height="100%" viewBox="0 0 24 24" width="100%"><path d="M20.753 19.34l-4.295-4.297A7.46 7.46 0 0 0 18 10.5a7.5 7.5 0 1 0-7.5 7.5 7.46 7.46 0 0 0 4.543-1.542l4.296 4.295a1 1 0 1 0 1.412-1.414zM10.5 16A5.506 5.506 0 0 1 5 10.5C5 7.467 7.467 5 10.5 5S16 7.467 16 10.5 13.533 16 10.5 16z"></path></svg>
-              </button>
-            </div>
+            
 
             <div className="nav-item">
-              <span className="svg-24">
-                <svg className="svg-24" height="100%" viewBox="0 0 24 24" width="100%"><path d="M18 3H6C4.34 3 3 4.34 3 6v7c0 1.66 1.34 3 3 3h2v5l5-5h5c1.66 0 3-1.34 3-3V6c0-1.66-1.34-3-3-3z"></path></svg>
+              <span className="svg-nav-24">
+                <svg className="svg-nav-24" height="100%" viewBox="0 0 24 24" width="100%"><path d="M18 3H6C4.34 3 3 4.34 3 6v7c0 1.66 1.34 3 3 3h2v5l5-5h5c1.66 0 3-1.34 3-3V6c0-1.66-1.34-3-3-3z"></path></svg>
               </span>
 
             </div>
             <div className="nav-item">
-              <span className="svg-24">
-                <svg className="svg-24" height="100%" viewBox="0 0 24 24" width="100%"><path d="M20.984 17.177A1 1 0 0 1 20 18H4a1 1 0 0 1-.348-1.938c2.43-.9 3.74-4.605 3.74-7.634 0-1.75 1.07-3.253 2.608-3.97V4a2 2 0 0 1 4 0v.457c1.538.718 2.61 2.22 2.61 3.97 0 3.03 1.31 6.734 3.738 7.635a1 1 0 0 1 .636 1.115zM12 22a3 3 0 0 1-3-3h6a3 3 0 0 1-3 3z"></path></svg>
+              <span className="svg-nav-24">
+                <svg className="svg-nav-24" height="100%" viewBox="0 0 24 24" width="100%"><path d="M20.984 17.177A1 1 0 0 1 20 18H4a1 1 0 0 1-.348-1.938c2.43-.9 3.74-4.605 3.74-7.634 0-1.75 1.07-3.253 2.608-3.97V4a2 2 0 0 1 4 0v.457c1.538.718 2.61 2.22 2.61 3.97 0 3.03 1.31 6.734 3.738 7.635a1 1 0 0 1 .636 1.115zM12 22a3 3 0 0 1-3-3h6a3 3 0 0 1-3 3z"></path></svg>
               </span>
             </div>
             <div className="nav-item">
@@ -76,7 +85,7 @@ class App extends React.Component {
               </span>
               <span className="dropdown-title">Restaurants</span>
               <span className="nav-triangle-stroke">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="icon_svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="icon_svg nav-triangle-stroke">
                   <path d="M18.364 9.525L16.95 8.11 12 13.06 7.05 8.11 5.636 9.526 12 15.89l6.364-6.365z"></path>
                 </svg>
               </span>
@@ -90,7 +99,7 @@ class App extends React.Component {
               </span>
               <span className="dropdown-title">Home Services</span>
               <span className="nav-triangle-stroke">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="icon_svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="icon_svg nav-triangle-stroke">
                   <path d="M18.364 9.525L16.95 8.11 12 13.06 7.05 8.11 5.636 9.526 12 15.89l6.364-6.365z">
                   </path>
                 </svg>
@@ -103,7 +112,7 @@ class App extends React.Component {
               </span>
               <span className="dropdown-title">Auto Services</span>
               <span className="nav-triangle-stroke">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="icon_svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="icon_svg nav-triangle-stroke">
                   <path d="M18.364 9.525L16.95 8.11 12 13.06 7.05 8.11 5.636 9.526 12 15.89l6.364-6.365z"></path>
                 </svg>
               </span>
@@ -111,7 +120,7 @@ class App extends React.Component {
             <div className="dropdown-item">
               <span className="dropdown-title">More</span>
               <span className="nav-triangle-stroke">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="icon_svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="icon_svg nav-triangle-stroke">
                   <path d="M18.364 9.525L16.95 8.11 12 13.06 7.05 8.11 5.636 9.526 12 15.89l6.364-6.365z"></path>
                 </svg>
               </span>
